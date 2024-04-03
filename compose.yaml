@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16.2-alpine
+    container_name: db
+    restart: always
+    volumes:
+      - ./src/data:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: Booking
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5400:5432"
+
+  server:
+    image: booking-app
+    container_name: app_1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      spring.datasource.url: jdbc:postgresql://db:5432/Booking
+      spring.datasource.username: postgres
+      spring.datasource.password: 100902
+      spring.datasource.driver-class-name: org.postgresql.Driver
+      spring.jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+      apiVersion: api/v1
+      jwt.secret: 12345678901234567890123456789012
+      jwt.expiration: 21600000
+      jwt.type: Bearer
+    ports:
+      - "8000:8080"
+
+volumes:
+  postgres_data:
