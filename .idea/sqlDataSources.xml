@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="1ca78aeb-c41d-493c-ac78-ee98b9595116" name="Booking@localhost (DDL) Mapping">
+      <data-sources db="8d9406a7-b7b4-4dbe-b547-df8b8d1261d2" ddl="acfd5869-429f-47f9-91f1-7b6ffc61f23f" />
+      <scope>
+        <node kind="database" qname="Booking">
+          <node kind="schema" qname="public" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="fd366877-d203-49c3-99d5-ee255d411aa2" name="Booking2@localhost (DDL) Mapping">
+      <data-sources db="8d9406a7-b7b4-4dbe-b547-df8b8d1261d2" ddl="54b49eb1-2300-404c-8f32-3cc8039a0d7e" />
+      <scope>
+        <node kind="database" qname="Booking">
+          <node kind="schema" qname="public" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
