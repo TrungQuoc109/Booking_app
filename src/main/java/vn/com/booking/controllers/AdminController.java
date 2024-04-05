@@ -1,5 +1,6 @@
 package vn.com.booking.controllers;
 
+import vn.com.booking.response.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,11 +9,14 @@ import vn.com.booking.services.AdminService;
 import vn.com.booking.services.UserService;
 import vn.com.booking.utils.JwtUtil;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/${apiVersion}/admin")
 public class AdminController {
 	private final AdminService adminService;
 	private final UserService userService;
+	private Response response;
 	JwtUtil jwtUtil;
 	@Autowired
 
@@ -20,6 +24,7 @@ public class AdminController {
 
 		this.adminService = adminService;
 		this.userService = userService;
+		this.response = new Response();
 		jwtUtil = new JwtUtil();
 	}
 
@@ -27,15 +32,15 @@ public class AdminController {
 
 	private  ResponseEntity<?>  checkToken(String token){
 		if (!jwtUtil.validateJwtToken(token)) {
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{message:\"Unauthorized access: Invalid token\"");
+			return this.response.MessageResponse("Unauthorized access: Invalid token", HttpStatus.UNAUTHORIZED);
 		}
 		Integer accountIdFromJwtToken = jwtUtil.getAccountIdFromJwtToken(token);
 		Integer role = jwtUtil.getRoleFromJwtToken(token);
 		if (accountIdFromJwtToken == null || role == null) {
-			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{message:\"Unauthorized access: Invalid data\"");
+			return this.response.MessageResponse("Unauthorized access: Invalid data", HttpStatus.UNAUTHORIZED);
 		}
 		if (role != 0) {
-			return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Forbidden");
+			return this.response.MessageResponse("Forbidden", HttpStatus.FORBIDDEN);
 		}
 		return  null;
 	}
@@ -49,7 +54,14 @@ public class AdminController {
 		}
 		return checkToken(token);
 	}
-
+	@PostMapping("/sign-up")
+	@ResponseBody
+	public  ResponseEntity<?> Register(@RequestHeader("Authorization") String token,@RequestBody Map<String,Object> info){
+		if(checkToken(token) == null) {
+			return adminService.Register(info);
+		}
+		return checkToken(token);
+	}
 	@GetMapping("/get-profile/{accountId}")
 	@ResponseBody
 	public ResponseEntity<?> GetProfileByAdmin(@RequestHeader("Authorization") String token, @PathVariable Integer accountId) {

@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>798</IntrospectionStateNumber>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
       <ServerVersion>16.2</ServerVersion>
-      <StartupTime>1712084000</StartupTime>
+      <StartupTime>1712244348</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -805,7 +805,7 @@ true posixrules
 13255||10|C|G
 13255||-9223372036854775808|U|G
 13255||10|U|G</Grants>
-      <IntrospectionStateNumber>798</IntrospectionStateNumber>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4224,178 +4224,129 @@ true posixrules
     <schema id="264" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>798</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-04-02.19:00:42</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-04-04.15:29:08</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="265" parent="264" name="accounts_account_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>24577</ObjectId>
+      <ObjectId>16385</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>744</StateNumber>
+      <StateNumber>732</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="266" parent="264" name="accounts_role_id_seq">
+    <sequence id="266" parent="264" name="profiles_account_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>24578</ObjectId>
+      <ObjectId>16394</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>744</StateNumber>
+      <StateNumber>738</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="267" parent="264" name="profiles_account_id_seq">
+    <sequence id="267" parent="264" name="profiles_profile_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>24587</ObjectId>
+      <ObjectId>16395</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>746</StateNumber>
+      <StateNumber>741</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="268" parent="264" name="profiles_profile_id_seq">
-      <DasType>integer|0s</DasType>
-      <ObjectId>24586</ObjectId>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>746</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <table id="269" parent="264" name="accounts">
-      <ObjectId>24579</ObjectId>
-      <StateNumber>746</StateNumber>
+    <table id="268" parent="264" name="accounts">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>732</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="270" parent="264" name="profiles">
-      <ObjectId>24588</ObjectId>
-      <StateNumber>746</StateNumber>
+    <table id="269" parent="264" name="profiles">
+      <ObjectId>16391</ObjectId>
+      <StateNumber>736</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="271" parent="269" name="account_id">
+    <column id="270" parent="268" name="account_id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;accounts_account_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>744</StateNumber>
-      <SequenceId>24577</SequenceId>
+      <SequenceId>16385</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="272" parent="269" name="username">
+    <column id="271" parent="268" name="username">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>744</StateNumber>
+      <StateNumber>732</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="273" parent="269" name="password">
+    <column id="272" parent="268" name="password">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>744</StateNumber>
+      <StateNumber>732</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="274" parent="269" name="role_id">
+    <column id="273" parent="268" name="role_id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>787</StateNumber>
-      <SequenceId>24578</SequenceId>
+      <StateNumber>759</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="275" parent="269" name="accounts_pkey">
-      <ColNames>account_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24584</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>744</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="276" parent="269" name="accounts_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24585</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>744</StateNumber>
-      <UnderlyingIndexId>24584</UnderlyingIndexId>
-    </key>
-    <column id="277" parent="270" name="profile_id">
+    <column id="274" parent="269" name="profile_id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;profiles_profile_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>746</StateNumber>
-      <SequenceId>24586</SequenceId>
+      <StateNumber>745</StateNumber>
+      <SequenceId>16395</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="278" parent="270" name="fullname">
+    <column id="275" parent="269" name="fullname">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>746</StateNumber>
+      <StateNumber>736</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="279" parent="270" name="age">
+    <column id="276" parent="269" name="age">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>746</StateNumber>
+      <StateNumber>736</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <column id="280" parent="270" name="email">
+    <column id="277" parent="269" name="email">
       <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
-      <StateNumber>746</StateNumber>
+      <StateNumber>736</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="270" name="number_phone">
+    <column id="278" parent="269" name="number_phone">
       <DasType>char(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>746</StateNumber>
+      <StateNumber>736</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="282" parent="270" name="emergency_contact">
+    <column id="279" parent="269" name="emergency_contact">
       <DasType>char(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>758</StateNumber>
+      <StateNumber>736</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="283" parent="270" name="account_id">
+    <column id="280" parent="269" name="account_id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StateNumber>779</StateNumber>
-      <SequenceId>24587</SequenceId>
+      <StateNumber>736</StateNumber>
+      <SequenceId>16394</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="284" parent="270" name="profile_account">
-      <ColNames>account_id</ColNames>
-      <ObjectId>24595</ObjectId>
-      <OnUpdate>cascade</OnUpdate>
-      <StateNumber>746</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>24579</RefTableId>
-    </foreign-key>
-    <index id="285" parent="270" name="profiles_pkey">
-      <ColNames>profile_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24593</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>746</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="286" parent="270" name="profiles_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24594</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>746</StateNumber>
-      <UnderlyingIndexId>24593</UnderlyingIndexId>
-    </key>
   </database-model>
 </dataSource>
