@@ -10,6 +10,7 @@ import vn.com.booking.response.Response;
 import vn.com.booking.services.UserService;
 import vn.com.booking.utils.JwtUtil;
 
+@CrossOrigin("${applicationPath}")
 @RestController
 @RequestMapping("/${apiVersion}/user")
 public class UserController {
@@ -28,8 +29,6 @@ public class UserController {
 	public ResponseEntity<?> Login(@RequestBody Account account){
 		return userService.Login(account);
 	}
-
-
 	@GetMapping("/get-profile")
 	@ResponseBody
 	public ResponseEntity<?>GetProfile(@RequestHeader("Authorization") String token) {
@@ -37,10 +36,7 @@ public class UserController {
 		if (!jwtUtil.validateJwtToken(token)) {
 			return this.response.MessageResponse("Unauthorized access: Invalid token", HttpStatus.UNAUTHORIZED);
 		}
-
-		System.out.print(jwtUtil.getAccountIdFromJwtToken(token));
 			accountId = jwtUtil.getAccountIdFromJwtToken(token);
-
 			if(accountId == null) {
 				return this.response.MessageResponse("Unauthorized access: Invalid id", HttpStatus.UNAUTHORIZED);
 			}

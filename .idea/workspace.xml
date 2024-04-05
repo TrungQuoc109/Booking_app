@@ -7,8 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a5b21a-4e2f-4020-8a39-82df53e72743" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/response/Response.java" afterDir="false" />
+    <list default="true" id="26a5b21a-4e2f-4020-8a39-82df53e72743" name="Changes" comment="change: sign-up, response">
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Account.class.uniqueId3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AccountRepository.class.uniqueId9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/JwtUtil.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Profile.class.uniqueId2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProfileRepository.class.uniqueId6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Response.class.uniqueId5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,40 +26,36 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_2_56_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_2_56_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_3_00_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_3_00_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_3_00_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_3_00_AM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2024_10_52_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2024_10_52_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2024_10_56_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_5_2024_10_56_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/ProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/ProfileRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/helper/Respone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Profile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/response/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/response/Response.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/RegexUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/RegexUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Account.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AccountRepository.class.uniqueId9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminService.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/JwtUtil.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Profile.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProfileRepository.class.uniqueId6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Respone.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProfileRepository.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/ProfileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/response/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/RegexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/RegexUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,68 +160,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.compose.yaml.postgres: Compose Deployment.executor": "Run",
-    "Docker.compose.yaml.server: Compose Deployment.executor": "Run",
-    "Docker.dokcer-compose.yml.server: Compose Deployment.executor": "Run",
-    "Docker.dokcer-compose.yml[server, postgres]: Compose Deployment.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Booking [assemble].executor": "Run",
-    "Gradle.Booking [bootBuildImage].executor": "Run",
-    "Gradle.Booking [bootJar].executor": "Run",
-    "Gradle.Booking [bootRun].executor": "Run",
-    "Gradle.Booking [buildDependents].executor": "Run",
-    "Gradle.Booking [buildNeeded].executor": "Run",
-    "Gradle.Booking [build].executor": "Run",
-    "Gradle.Booking [clean].executor": "Run",
-    "Gradle.Booking [compileJava].executor": "Run",
-    "Gradle.Booking [init].executor": "Run",
-    "Gradle.Booking [jar].executor": "Run",
-    "Gradle.Booking [model].executor": "Run",
-    "Gradle.Booking [wrapper].executor": "Run",
-    "Gradle.Build Booking.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookingApplication.executor": "Debug",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "database.data.extractors.current.id": "SQL Inserts",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project/Booking_App",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.compose.yaml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.compose.yaml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dokcer-compose.yml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dokcer-compose.yml[server, postgres]: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Booking [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [buildNeeded].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [compileJava].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [init].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [model].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Booking.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/Booking_App&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ],
-    "DatabaseDriversLRU": [
-      "postgresql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="vn.com.booking.services" />
@@ -232,7 +237,7 @@
       <recent name="vn.com.booking.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Booking [bootBuildImage]">
+  <component name="RunManager" selected="Spring Boot.BookingApplication">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -603,6 +608,8 @@
       <workItem from="1712130485877" duration="18094000" />
       <workItem from="1712156346858" duration="977000" />
       <workItem from="1712166774317" duration="1859000" />
+      <workItem from="1712296288824" duration="4174000" />
+      <workItem from="1712308035123" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />

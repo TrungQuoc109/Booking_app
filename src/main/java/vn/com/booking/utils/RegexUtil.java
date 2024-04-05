@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class RegexUtil {
 	public static String usernameRegex = "^[a-zA-Z0-9_]{3,30}$";
 
-	public static String passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,30}$";
+	public static String passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[-`~!@#$%^&*()_+={}[\\\\]|:;\\\"'<>,.?/]).{8,30}$";
 
 	public static String phoneNumberRegex = "^\\d{10}$";
 

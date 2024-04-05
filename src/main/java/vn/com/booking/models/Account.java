@@ -19,4 +19,8 @@ public class Account {
 	private  Integer role;
 	@OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
 	private Profile profile;
+
+	public Account() {
+		this.role = 1;
+	}
 }

@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface ProfileRepository extends JpaRepository<Profile,Long> {
 	Profile findByAccount_AccountId(Integer accountId);
-	Profile findByNumberPhoneOrEmail(String phoneNumber, String email);
+	Profile findByPhoneNumberOrEmail(String phoneNumber, String email);
 
 	List <Profile> findAllByAccount_Role(Integer role);
 }

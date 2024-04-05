@@ -10,7 +10,7 @@ import vn.com.booking.services.UserService;
 import vn.com.booking.utils.JwtUtil;
 
 import java.util.Map;
-
+@CrossOrigin("${applicationPath}")
 @RestController
 @RequestMapping("/${apiVersion}/admin")
 public class AdminController {

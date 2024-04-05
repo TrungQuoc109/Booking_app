@@ -36,7 +36,7 @@ public class Response {
 		Map<String, Object> response = new HashMap<>();
 		response.put("name",profile.getName());
 		response.put("age",profile.getAge());
-		response.put("numberPhone",profile.getNumberPhone());
+		response.put("numberPhone",profile.getPhoneNumber());
 		response.put("emergencyContact",profile.getEmergencyContact());
 		response.put("email",profile.getEmail());
 		return ResponseEntity.status(status).body(response);
@@ -48,7 +48,7 @@ public class Response {
 			ele.put("name",profile.getName());
 			ele.put("id",profile.getAccount().getAccountId());
 			ele.put("age",profile.getAge());
-			ele.put("numberPhone",profile.getNumberPhone());
+			ele.put("numberPhone",profile.getPhoneNumber());
 			response.add(ele);
 		}
 		return ResponseEntity.status(status).body(response);

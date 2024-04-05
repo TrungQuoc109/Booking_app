@@ -26,16 +26,8 @@ public class UserService {
 	private AccountRepository accountRepository;
 	private ProfileRepository profileRepository;
 	private Response response;
-	Map<String, Object> res = null;
 
 	JwtUtil jwtUtil ;
-
-
-
-
-
-
-
 
 	@Autowired
 	public UserService(AccountRepository accountRepository, ProfileRepository profileRepository) {
@@ -56,12 +48,12 @@ public class UserService {
 
 			Account acc = accountRepository.findByUsername((accountReq.getUsername()));
 			if (acc != null) {
-				if (acc.getPassword().equals(accountReq.getPassword())) {
-					String token = jwtUtil.generateJwtToken(acc);
-					return this.response.LoginResponse(token,tokenType,jwtUtil.jwtExpirationMs,acc,HttpStatus.OK);
-				} else {
+				if (!acc.getPassword().equals(accountReq.getPassword())) {
 					return this.response.MessageResponse("Incorrect password or username",HttpStatus.BAD_REQUEST);
 				}
+
+				String token = jwtUtil.generateJwtToken(acc);
+				return this.response.LoginResponse(token,tokenType,jwtUtil.jwtExpirationMs,acc,HttpStatus.OK);
 
 			}
 			return this.response.MessageResponse("Incorrect password or username",HttpStatus.BAD_REQUEST);

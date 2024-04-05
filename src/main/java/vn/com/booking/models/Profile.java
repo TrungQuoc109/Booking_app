@@ -19,7 +19,7 @@ public class Profile {
 	@Column(name="email")
 	private  String email ;
 	@Column(name="number_phone")
-	private  String numberPhone;
+	private  String phoneNumber;
 	@Column(name="emergency_contact")
 	private  String emergencyContact;
 	@Column(name="age")
