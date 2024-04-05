@@ -31,6 +31,7 @@ public class AdminService {
 			Map<String,Object> ele = new HashMap<>();
 			ele.put("name",profile.getName());
 			ele.put("id",profile.getAccount().getAccountId());
+			ele.put("age",profile.getAge());
 			ele.put("numberPhone",profile.getNumberPhone());
 			response.add(ele);
 		}
