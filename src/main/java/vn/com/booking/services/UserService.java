@@ -41,22 +41,17 @@ public class UserService {
 		try {
 
 			if (accountReq.getUsername() == null || accountReq.getPassword() == null||
-					!RegexUtil.checkRegex(RegexUtil.usernameRegex, accountReq.getUsername())
-					|| !RegexUtil.checkRegex(RegexUtil.passwordRegex, accountReq.getPassword())) {
+					!RegexUtil.checkLogin(accountReq.getUsername(), accountReq.getPassword())) {
 				return  this.response.MessageResponse("Invalid username or password",HttpStatus.BAD_REQUEST);
 			}
 
+
 			Account acc = accountRepository.findByUsername((accountReq.getUsername()));
-			if (acc != null) {
-				if (!acc.getPassword().equals(accountReq.getPassword())) {
-					return this.response.MessageResponse("Incorrect password or username",HttpStatus.BAD_REQUEST);
-				}
-
-				String token = jwtUtil.generateJwtToken(acc);
-				return this.response.LoginResponse(token,tokenType,jwtUtil.jwtExpirationMs,acc,HttpStatus.OK);
-
+			if (acc == null || !acc.getPassword().equals(accountReq.getPassword())) {
+				return this.response.MessageResponse("Incorrect password or username",HttpStatus.BAD_REQUEST);
 			}
-			return this.response.MessageResponse("Incorrect password or username",HttpStatus.BAD_REQUEST);
+			String token = jwtUtil.generateJwtToken(acc);
+			return this.response.LoginResponse(token,tokenType,jwtUtil.jwtExpirationMs,acc,HttpStatus.OK);
 
 		} catch (Exception error) {
 			System.err.print(error.getMessage());

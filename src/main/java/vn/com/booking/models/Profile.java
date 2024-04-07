@@ -27,4 +27,15 @@ public class Profile {
 	@OneToOne
 	@JoinColumn(name = "account_id", referencedColumnName = "account_id")
 	private Account account;
+
+	public Profile() {
+	}
+
+	public Profile(String name, String email, String phoneNumber, String emergencyContact, Integer age) {
+		this.name = name;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.emergencyContact = emergencyContact;
+		this.age = age;
+	}
 }

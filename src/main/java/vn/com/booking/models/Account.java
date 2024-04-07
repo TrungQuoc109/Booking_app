@@ -2,6 +2,7 @@ package vn.com.booking.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import vn.com.booking.enumclass.Role;
 
 @Entity
 @Data
@@ -15,12 +16,25 @@ public class Account {
 	private  String username ;
 	@Column(name="password")
 	private  String password ;
-	@Column(name="role_id", columnDefinition = "integer default 1")
-	private  Integer role;
+	@Column(name="role_id")
+	private Integer role;
 	@OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
 	private Profile profile;
 
-	public Account() {
-		this.role = 1;
+	public Account(String username, String password)
+	{
+		this.username = username;
+		this.password = password;
+		this.role = Role.User.getValue();
+	}
+	public Account(){
+		this.role = Role.User.getValue();
+	}
+
+	public Account(Integer accountId, String username, String password, Integer role) {
+		this.accountId = accountId;
+		this.username = username;
+		this.password = password;
+		this.role = role;
 	}
 }

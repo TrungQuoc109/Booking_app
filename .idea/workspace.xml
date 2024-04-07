@@ -8,54 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26a5b21a-4e2f-4020-8a39-82df53e72743" name="Changes" comment="change: sign-up, response">
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Account.class.uniqueId3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AccountRepository.class.uniqueId9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/JwtUtil.class.uniqueId1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Profile.class.uniqueId2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProfileRepository.class.uniqueId6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Response.class.uniqueId5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/enumclass/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/ProfileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/ProfileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/helper/Respone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/response/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/response/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/RegexUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/RegexUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminController.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminService.class.uniqueId0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProfileRepository.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/ProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/models/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/response/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/RegexUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/utils/RegexUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +70,7 @@
         <option value="spring-beans.schema" />
         <option value="Dockerfile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -237,7 +200,7 @@
       <recent name="vn.com.booking.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BookingApplication">
+  <component name="RunManager" selected="Gradle.Booking [bootBuildImage]">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -610,6 +573,8 @@
       <workItem from="1712166774317" duration="1859000" />
       <workItem from="1712296288824" duration="4174000" />
       <workItem from="1712308035123" duration="3354000" />
+      <workItem from="1712311761563" duration="999000" />
+      <workItem from="1712469201593" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
