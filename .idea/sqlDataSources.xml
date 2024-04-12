@@ -18,4 +18,23 @@
       </scope>
     </mapping>
   </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="3c1a371f-155f-47b8-b886-4f43bb60b843" />
+          <option name="name" value="Booking@localhost (DDL)" />
+          <option name="dbmsName" value="POSTGRES" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/data/public/profiles_account_id_seq.sql" />
+              <option value="file://$PROJECT_DIR$/src/data/public/accounts.sql" />
+              <option value="file://$PROJECT_DIR$/src/data/public/profiles.sql" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
 </project>

@@ -1,11 +1,11 @@
 package vn.com.booking.utils;
 
-import vn.com.booking.models.Profile;
+import vn.com.booking.models.Account;
 
 import java.util.regex.Pattern;
 
 public class RegexUtil {
-	public static String usernameRegex = "^[a-zA-Z0-9_]{3,30}$";
+	public static String usernameRegex = "^[a-zA-Z0-9_]{4,30}$";
 
 	public static String passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[-`~!@#$%^&*()_+={}[\\\\]|:;\\\"'<>,.?/]).{8,30}$";
 
@@ -24,9 +24,8 @@ public class RegexUtil {
 				&& checkRegex(passwordRegex, password);
 	}
 
-	public static boolean checkProfileRegex(Profile profile) {
+	public static boolean checkProfileRegex(Account profile) {
 		return RegexUtil.checkRegex(RegexUtil.phoneNumberRegex, profile.getPhoneNumber())
-				&& RegexUtil.checkRegex(RegexUtil.phoneNumberRegex, profile.getEmergencyContact())
 				&& RegexUtil.checkRegex(RegexUtil.ageRegex, profile.getAge().toString());
 
 	}

@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_4_1_2024_2_56_AM_[Changes]" date="1711915000156" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_2_56_AM_[Changes]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 4/1/2024 2:56 AM [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" />
-    <option name="AFTER_PATH" value="gradle/wrapper/gradle-wrapper.jar" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_1_2024_2_56_AM_[Changes]/gradle-wrapper.jar" />
-  </binary>
-</changelist>

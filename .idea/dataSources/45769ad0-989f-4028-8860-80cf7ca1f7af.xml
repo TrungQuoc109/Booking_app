@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>763</IntrospectionStateNumber>
+      <IntrospectionStateNumber>839</IntrospectionStateNumber>
       <ServerVersion>16.2</ServerVersion>
-      <StartupTime>1712244348</StartupTime>
+      <StartupTime>1712850379</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -230,7 +230,7 @@ false America/Rio_Branco
 false America/Rosario
 true America/Santa_Isabel
 false America/Santarem
-true America/Santiago
+false America/Santiago
 false America/Santo_Domingo
 false America/Sao_Paulo
 true America/Scoresbysund
@@ -258,12 +258,12 @@ true America/Yellowknife
 false Antarctica/Casey
 false Antarctica/Davis
 false Antarctica/DumontDUrville
-true Antarctica/Macquarie
+false Antarctica/Macquarie
 false Antarctica/Mawson
-true Antarctica/McMurdo
+false Antarctica/McMurdo
 false Antarctica/Palmer
 false Antarctica/Rothera
-true Antarctica/South_Pole
+false Antarctica/South_Pole
 false Antarctica/Syowa
 true Antarctica/Troll
 false Antarctica/Vostok
@@ -379,29 +379,29 @@ false Atlantic/Reykjavik
 false Atlantic/South_Georgia
 false Atlantic/St_Helena
 false Atlantic/Stanley
-true Australia/ACT
-true Australia/Adelaide
+false Australia/ACT
+false Australia/Adelaide
 false Australia/Brisbane
-true Australia/Broken_Hill
-true Australia/Canberra
-true Australia/Currie
+false Australia/Broken_Hill
+false Australia/Canberra
+false Australia/Currie
 false Australia/Darwin
 false Australia/Eucla
-true Australia/Hobart
-true Australia/LHI
+false Australia/Hobart
+false Australia/LHI
 false Australia/Lindeman
-true Australia/Lord_Howe
-true Australia/Melbourne
-true Australia/NSW
+false Australia/Lord_Howe
+false Australia/Melbourne
+false Australia/NSW
 false Australia/North
 false Australia/Perth
 false Australia/Queensland
-true Australia/South
-true Australia/Sydney
-true Australia/Tasmania
-true Australia/Victoria
+false Australia/South
+false Australia/Sydney
+false Australia/Tasmania
+false Australia/Victoria
 false Australia/West
-true Australia/Yancowinna
+false Australia/Yancowinna
 true BDST
 false BDT
 false BNT
@@ -428,7 +428,7 @@ false CHAST
 false CHUT
 false CKT
 true CLST
-true CLT
+false CLT
 false COT
 false CST
 true CST6CDT
@@ -441,13 +441,13 @@ true Canada/Newfoundland
 true Canada/Pacific
 false Canada/Saskatchewan
 false Canada/Yukon
-true Chile/Continental
-true Chile/EasterIsland
+false Chile/Continental
+false Chile/EasterIsland
 true Cuba
 false DAVT
 false DDUT
-true EASST
-true EAST
+false EASST
+false EAST
 false EAT
 true EDT
 true EEST
@@ -616,7 +616,7 @@ false KRAST
 false KRAT
 false KST
 false Kwajalein
-true LHDT
+false LHDT
 false LHST
 false LIGT
 false LINT
@@ -653,8 +653,8 @@ false NOVT
 false NPT
 false NST
 false NUT
-true NZ
-true NZ-CHAT
+false NZ
+false NZ-CHAT
 true NZDT
 false NZST
 false NZT
@@ -679,11 +679,11 @@ false PWT
 true PYST
 false PYT
 false Pacific/Apia
-true Pacific/Auckland
+false Pacific/Auckland
 false Pacific/Bougainville
-true Pacific/Chatham
+false Pacific/Chatham
 false Pacific/Chuuk
-true Pacific/Easter
+false Pacific/Easter
 false Pacific/Efate
 false Pacific/Enderbury
 false Pacific/Fakaofo
@@ -704,7 +704,7 @@ false Pacific/Marquesas
 false Pacific/Midway
 false Pacific/Nauru
 false Pacific/Niue
-true Pacific/Norfolk
+false Pacific/Norfolk
 false Pacific/Noumea
 false Pacific/Pago_Pago
 false Pacific/Palau
@@ -805,7 +805,7 @@ true posixrules
 13255||10|C|G
 13255||-9223372036854775808|U|G
 13255||10|U|G</Grants>
-      <IntrospectionStateNumber>763</IntrospectionStateNumber>
+      <IntrospectionStateNumber>839</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4224,129 +4224,246 @@ true posixrules
     <schema id="264" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>763</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-04-04.15:29:08</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>839</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-04-11.15:46:47</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="265" parent="264" name="accounts_account_id_seq">
-      <DasType>integer|0s</DasType>
-      <ObjectId>16385</ObjectId>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>732</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <sequence id="266" parent="264" name="profiles_account_id_seq">
-      <DasType>integer|0s</DasType>
-      <ObjectId>16394</ObjectId>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>738</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <sequence id="267" parent="264" name="profiles_profile_id_seq">
-      <DasType>integer|0s</DasType>
-      <ObjectId>16395</ObjectId>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StartValue>1</StartValue>
-      <StateNumber>741</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <table id="268" parent="264" name="accounts">
-      <ObjectId>16386</ObjectId>
-      <StateNumber>732</StateNumber>
+    <table id="265" parent="264" name="account">
+      <ObjectId>24625</ObjectId>
+      <StateNumber>823</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="269" parent="264" name="profiles">
-      <ObjectId>16391</ObjectId>
-      <StateNumber>736</StateNumber>
+    <table id="266" parent="264" name="permission">
+      <ObjectId>24640</ObjectId>
+      <StateNumber>829</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="270" parent="268" name="account_id">
-      <DasType>integer|0s</DasType>
-      <DefaultExpression>nextval(&apos;accounts_account_id_seq&apos;::regclass)</DefaultExpression>
+    <table id="267" parent="264" name="role">
+      <ObjectId>24630</ObjectId>
+      <StateNumber>823</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="268" parent="264" name="rolepermission">
+      <ObjectId>24645</ObjectId>
+      <StateNumber>829</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="269" parent="265" name="id">
+      <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>744</StateNumber>
-      <SequenceId>16385</SequenceId>
-      <TypeId>23</TypeId>
+      <StateNumber>817</StateNumber>
+      <TypeId>2950</TypeId>
     </column>
-    <column id="271" parent="268" name="username">
+    <column id="270" parent="265" name="name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>732</StateNumber>
+      <StateNumber>817</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="272" parent="268" name="password">
-      <DasType>varchar(50)|0s</DasType>
+    <column id="271" parent="265" name="age">
+      <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>732</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="273" parent="268" name="role_id">
-      <DasType>integer|0s</DasType>
-      <DefaultExpression>1</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>759</StateNumber>
+      <StateNumber>817</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="274" parent="269" name="profile_id">
-      <DasType>integer|0s</DasType>
-      <DefaultExpression>nextval(&apos;profiles_profile_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>745</StateNumber>
-      <SequenceId>16395</SequenceId>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="275" parent="269" name="fullname">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>736</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="276" parent="269" name="age">
-      <DasType>smallint|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>736</StateNumber>
-      <TypeId>21</TypeId>
-    </column>
-    <column id="277" parent="269" name="email">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>4</Position>
-      <StateNumber>736</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="278" parent="269" name="number_phone">
+    <column id="272" parent="265" name="phone_number">
       <DasType>char(10)|0s</DasType>
       <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>736</StateNumber>
+      <Position>4</Position>
+      <StateNumber>817</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="279" parent="269" name="emergency_contact">
-      <DasType>char(10)|0s</DasType>
+    <column id="273" parent="265" name="email">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>817</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="274" parent="265" name="password">
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>736</StateNumber>
-      <TypeId>1042</TypeId>
+      <StateNumber>817</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="280" parent="269" name="account_id">
-      <DasType>integer|0s</DasType>
+    <column id="275" parent="265" name="username">
+      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StateNumber>736</StateNumber>
-      <SequenceId>16394</SequenceId>
-      <TypeId>23</TypeId>
+      <StateNumber>817</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
+    <column id="276" parent="265" name="role_id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+      <StateNumber>817</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="277" parent="265" name="account_role_id_fk">
+      <ColNames>role_id</ColNames>
+      <ObjectId>24635</ObjectId>
+      <StateNumber>823</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24630</RefTableId>
+    </foreign-key>
+    <index id="278" parent="265" name="account_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24628</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>817</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="279" parent="265" name="account_pk_phone_number">
+      <ColNames>phone_number</ColNames>
+      <ObjectId>24662</ObjectId>
+      <StateNumber>836</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="280" parent="265" name="account_pk_username">
+      <ColNames>username</ColNames>
+      <ObjectId>24660</ObjectId>
+      <StateNumber>835</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="281" parent="265" name="account_pk">
+      <ObjectId>24629</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>817</StateNumber>
+      <UnderlyingIndexId>24628</UnderlyingIndexId>
+    </key>
+    <key id="282" parent="265" name="account_pk_phone_number">
+      <ObjectId>24663</ObjectId>
+      <StateNumber>836</StateNumber>
+      <UnderlyingIndexId>24662</UnderlyingIndexId>
+    </key>
+    <key id="283" parent="265" name="account_pk_username">
+      <ObjectId>24661</ObjectId>
+      <StateNumber>835</StateNumber>
+      <UnderlyingIndexId>24660</UnderlyingIndexId>
+    </key>
+    <column id="284" parent="266" name="id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>826</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="285" parent="266" name="permission_name">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>826</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="286" parent="266" name="permission_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24643</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>826</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="287" parent="266" name="permission_pk">
+      <ObjectId>24644</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>826</StateNumber>
+      <UnderlyingIndexId>24643</UnderlyingIndexId>
+    </key>
+    <column id="288" parent="267" name="id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>820</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="289" parent="267" name="role_name">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>820</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="290" parent="267" name="role_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24633</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>820</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="291" parent="267" name="role_pk">
+      <ObjectId>24634</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>820</StateNumber>
+      <UnderlyingIndexId>24633</UnderlyingIndexId>
+    </key>
+    <column id="292" parent="268" name="id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>829</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="293" parent="268" name="role_id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>829</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="294" parent="268" name="permission_id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>829</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <foreign-key id="295" parent="268" name="rolepermission_role_id_fk">
+      <ColNames>role_id</ColNames>
+      <ObjectId>24650</ObjectId>
+      <StateNumber>829</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24630</RefTableId>
+    </foreign-key>
+    <foreign-key id="296" parent="268" name="rolepermission_permission_id_fk">
+      <ColNames>permission_id</ColNames>
+      <ObjectId>24655</ObjectId>
+      <StateNumber>829</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>24640</RefTableId>
+    </foreign-key>
+    <index id="297" parent="268" name="rolepermission_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>24648</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>829</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="298" parent="268" name="rolepermission_pk">
+      <ObjectId>24649</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>829</StateNumber>
+      <UnderlyingIndexId>24648</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
