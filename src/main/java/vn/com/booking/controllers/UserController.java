@@ -49,13 +49,13 @@ public class UserController {
 		return userService.GetProfile(accountId, role);
 	}
 
-	@PutMapping("/change-password/{accountId}")
+	@PutMapping({"/change-password/{accountId}", "/change-password"})
 	@ResponseBody
 	public ResponseEntity<?> changePassword(@RequestHeader("Authorization") String token, @PathVariable(required = false) UUID accountId, @RequestBody Map<String, Object> body) {
 		return processRequest(token, accountId, body, "changePassword");
 	}
 
-	@PutMapping("/change-profile/{accountId}")
+	@PutMapping({"/change-profile/{accountId}", "/change-profile"})
 	@ResponseBody
 	public ResponseEntity<?> changeProfile(@RequestHeader("Authorization") String token, @PathVariable(required = false) UUID accountId, @RequestBody Map<String, Object> body) {
 		return processRequest(token, accountId, body, "changeProfile");

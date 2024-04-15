@@ -42,11 +42,11 @@ public class Response {
 		return ResponseEntity.status(status).body(response);
 	}
 
-	public ResponseEntity<Map<String, Object>> ListProfileResponse(List<Account> profiles, HttpStatus status) {
+	public ResponseEntity<Map<String, Object>> ListProfileResponse(List<Account> profiles, Integer start, HttpStatus status) {
 		List<Object> data = new ArrayList<>();
-		int count = 0;
+
 		for (Account profile : profiles) {
-			count++;
+
 			Map<String, Object> ele = new HashMap<>();
 			ele.put("name", profile.getName());
 			ele.put("id", profile.getAccountId());
@@ -55,8 +55,8 @@ public class Response {
 			data.add(ele);
 		}
 		Map<String, Object> response = new HashMap<String, Object>();
-		response.put("total", count);
-		response.put("page", 0);
+		response.put("size", profiles.size());
+		response.put("page", start);
 		response.put("data", data);
 		return ResponseEntity.status(status).body(response);
 	}

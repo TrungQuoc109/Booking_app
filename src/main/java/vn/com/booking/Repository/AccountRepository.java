@@ -1,5 +1,6 @@
 package vn.com.booking.Repository;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import vn.com.booking.models.Account;
@@ -16,6 +17,10 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
 
 	Account findByPhoneNumber(String phoneNumber);
 
-	List<Account> findAllByRoleRoleName(String roleName);
+	List<Account> findAccountsByRoleRoleName(String roleName, Pageable pageable);
+
+
+
+
 
 }

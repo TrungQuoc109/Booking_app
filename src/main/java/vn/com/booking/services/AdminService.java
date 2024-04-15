@@ -2,6 +2,9 @@ package vn.com.booking.services;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,10 +20,8 @@ import vn.com.booking.models.RolePermission;
 import vn.com.booking.utils.JwtUtil;
 import vn.com.booking.utils.RegexUtil;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.UUID;
+import java.lang.reflect.Field;
+import java.util.*;
 
 @Service
 @Data
@@ -97,20 +98,31 @@ public class AdminService {
 		}
 	}
 
-	public ResponseEntity<?> GetListUser(UUID role) {
+	public ResponseEntity<?> GetListUser(UUID role, Integer start, Integer end, String sort, String order) {
 		try {
 			RolePermission perrmissionIsExist = permissionRepository.findRolePermissionByRole_RoleIdAndPermissionPermissionName(role, PermissionEnum.view_list_user.toString());
 			if (perrmissionIsExist == null) {
 				return this.response.MessageResponse("Unauthorized", HttpStatus.UNAUTHORIZED);
 			}
-			List<Account> profiles = accountRepository.findAllByRoleRoleName(RoleEnum.user.toString());
+			Field[] fields = Account.class.getDeclaredFields();
+			boolean isPropertyExist = Arrays.stream(fields)
+					.anyMatch(field -> field.getName().equals(sort));
+			if (!isPropertyExist) {
+				return this.response.MessageResponse("Column " + sort + " dose not exist in table ", HttpStatus.BAD_REQUEST);
+			}
+			if (!order.equalsIgnoreCase("asc") && !order.equalsIgnoreCase("desc")) {
+				return this.response.MessageResponse("Invalid sorting direction", HttpStatus.BAD_REQUEST);
+			}
+			Pageable pageable = PageRequest.of(start, end, Sort.by(order.equalsIgnoreCase("desc") ? Sort.Direction.DESC : Sort.Direction.ASC, sort));
+			List<Account> profiles = accountRepository.findAccountsByRoleRoleName(RoleEnum.user.toString(), pageable);
+
 			if (profiles == null) {
 				return this.response.MessageResponse("Profile not found!", HttpStatus.NOT_FOUND);
 			}
-			return this.response.ListProfileResponse(profiles, HttpStatus.OK);
+			return this.response.ListProfileResponse(profiles, start, HttpStatus.OK);
 		} catch (Exception error) {
 			System.err.print(error.getMessage());
-			return this.response.MessageResponse("Internal Server Error " + error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+			return this.response.MessageResponse("Internal Server Error " + error.getMessage() + sort + " " + order + " " + start.toString() + end.toString(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 
