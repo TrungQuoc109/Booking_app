@@ -38,17 +38,14 @@ public class UserService {
 
 	@Autowired
 	public UserService(AccountRepository accountRepository, PermissionRepository permissionRepository, RoleRepository roleRepository) {
-
 		this.accountRepository = accountRepository;
 		this.permissionRepository = permissionRepository;
 		this.roleRepository = roleRepository;
 		this.response = new Response();
 		jwtUtil = new JwtUtil(this.response);
 	}
-
 	public ResponseEntity<Map<String, Object>> Login(Account accountReq) {
 		try {
-
 			if (accountReq.getUsername() == null || accountReq.getPassword() == null ||
 					!RegexUtil.checkLogin(accountReq.getUsername(), accountReq.getPassword())) {
 				return this.response.MessageResponse("Invalid username or password", HttpStatus.BAD_REQUEST);
@@ -65,7 +62,6 @@ public class UserService {
 			return this.response.MessageResponse("Internal Server Error " + error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-
 	public ResponseEntity<Map<String, Object>> GetProfile(UUID accountId, UUID roleId) {
 		try {
 			if (checkPermission(roleId, PermissionEnum.view_profile_of_user.toString()) != null) {
@@ -84,7 +80,6 @@ public class UserService {
 			return this.response.MessageResponse("Internal Server Error " + error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-
 	public ResponseEntity<Map<String, Object>> ChangePassword(UUID accountId, UUID roleId, Map<String, Object> body) {
 		try {
 			if (checkPermission(roleId, PermissionEnum.change_password.toString()) != null) {
@@ -100,12 +95,18 @@ public class UserService {
 			String newPwd = body.get("newPwd").toString();
 			String oldPwd = body.get("oldPwd").toString();
 			String retypePwd = body.get("retypePwd").toString();
-
+			if (newPwd == null || oldPwd == null || retypePwd == null) {
+				return this.response.MessageResponse("Missing password data", HttpStatus.BAD_REQUEST);
+			}
 			if (!account.getPassword().equals(oldPwd)) {
 				return this.response.MessageResponse("Old password is incorrect.", HttpStatus.BAD_REQUEST);
 			}
+			if(!RegexUtil.checkRegex(RegexUtil.passwordRegex,newPwd))
+			{
+				return this.response.MessageResponse("Invalid Password Format",HttpStatus.BAD_REQUEST);
+			}
 			if (!newPwd.equals(retypePwd)) {
-				return this.response.MessageResponse("New password not equals Retype password.", HttpStatus.BAD_REQUEST);
+				return this.response.MessageResponse("New password does not match Retype password.", HttpStatus.BAD_REQUEST);
 			}
 			account.setPassword(newPwd);
 			accountRepository.save(account);
@@ -117,7 +118,6 @@ public class UserService {
 			return this.response.MessageResponse("Internal Server Error " + error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-
 	public ResponseEntity<Map<String, Object>> ChangeProfile(UUID accountId, UUID roleId, Map<String, Object> body) {
 		try {
 			if (checkPermission(roleId, PermissionEnum.change_profile.toString()) != null) {
@@ -132,6 +132,7 @@ public class UserService {
 			}
 			Map<String, Object> profile = (Map<String, Object>) body.get("profile");
 			AtomicBoolean isMissingProfile = new AtomicBoolean(false);
+			StringBuilder errorMessage = new StringBuilder("Invalid Data: ");
 			profile.forEach((key, value) -> {
 				if (isMissingProfile.get()) {
 					return;
@@ -142,21 +143,37 @@ public class UserService {
 						account.setName(value.toString());
 						break;
 					case "phoneNumber":
+						if(!RegexUtil.checkRegex(RegexUtil.phoneNumberRegex,value.toString())){
+							isMissingProfile.set(true);
+							errorMessage.append("Invalid phone number. ");
+							break;
+						}
 						account.setPhoneNumber(value.toString());
 						break;
 					case "age":
+						if(!RegexUtil.checkRegex(RegexUtil.ageRegex,value.toString())){
+							isMissingProfile.set(true);
+							errorMessage.append("Invalid age. ");
+							break;
+						}
 						account.setAge(Integer.parseInt(value.toString()));
 						break;
 					case "email":
+						if(!RegexUtil.checkRegex(RegexUtil.emailRegex,value.toString())){
+							isMissingProfile.set(true);
+							errorMessage.append("Invalid email. ");
+							break;
+						}
 						account.setEmail(value.toString());
 						break;
 					default:
 						isMissingProfile.set(true);
+						errorMessage.append("Unknown field: ").append(key).append(". ");
 						break;
 				}
 			});
 			if (isMissingProfile.get()) {
-				return this.response.MessageResponse("Missing Data", HttpStatus.BAD_REQUEST);
+				return this.response.MessageResponse(errorMessage.toString(), HttpStatus.BAD_REQUEST);
 			}
 			accountRepository.save(account);
 			return response.MessageResponse("Profile changed successfully.", HttpStatus.OK);
@@ -167,14 +184,12 @@ public class UserService {
 			return this.response.MessageResponse("Internal Server Error " + error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-
 	private ResponseEntity<Map<String, Object>> checkPermission(UUID roleId, String permisstionValue) {
 		Role userRole = roleRepository.findByRoleId(roleId);
 		RolePermission isPerrmission = permissionRepository.findRolePermissionByRole_RoleIdAndPermissionPermissionName(roleId, permisstionValue);
 		if (!userRole.getRoleName().equals(RoleEnum.user.toString()) && isPerrmission == null) {
 			return this.response.MessageResponse("Unauthorized", HttpStatus.UNAUTHORIZED);
 		}
-
 		return null;
 	}
 

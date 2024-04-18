@@ -1,48 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="ANALYZE_INJECTED_CODE" value="false" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26a5b21a-4e2f-4020-8a39-82df53e72743" name="Changes" comment="">
+    <list default="true" id="f02c5c44-f604-42e7-843d-17dec204ae32" name="Changes" comment="change: fix change-profile, update path change-password">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af/storage_v2/_src_/database/Booking.OaATZw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af/storage_v2/_src_/database/Booking.OaATZw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af/storage_v2/_src_/database/Booking.OaATZw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/45769ad0-989f-4028-8860-80cf7ca1f7af/storage_v2/_src_/database/Booking.OaATZw/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/Repository/AccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/models/Account.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/services/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/vn/com/booking/utils/JwtUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Booking-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AdminService.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/JwtUtil.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/Repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/helper/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/helper/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/booking/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -62,22 +65,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Booking" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Booking" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Booking" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Booking" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -85,160 +72,71 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="spring-beans.schema" />
-        <option value="Dockerfile" />
-        <option value="Enum" />
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
-        <entry key="$PROJECT_DIR$/Booking" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TrungQuoc109&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="c00b01aa-4dd0-4099-993d-af8916c18e33" />
-        <option name="url" value="https://github.com/TrungQuoc109/Booking_app.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TrungQuoc109/Booking_app.git&quot;,
+    &quot;accountId&quot;: &quot;ae9f8be8-03c0-4554-b64a-0bd41eb77458&quot;
+  }
 }</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2eRCn4joAqrA1NqGgWNgNmK2Qyt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2fBEa2YbrZz6e80HZaIat8bb83v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Docker.compose.yaml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.compose.yaml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dokcer-compose.yml.server: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dokcer-compose.yml[server, postgres]: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Booking [assemble].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [bootBuildImage].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [bootJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [buildDependents].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [buildNeeded].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [compileJava].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [init].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [model].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Booking [wrapper].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BookingApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Booking.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;Gradle.Booking_app [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking_app [bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking_app [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Booking_app [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Booking_app.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookingApplication.executor&quot;: &quot;Run&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/Booking_App&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dell/project/SpringBoot-Authentication&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;
-    ],
     &quot;DatabaseDriversLRU&quot;: [
       &quot;postgresql&quot;
-    ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;PostgreSQL&quot;
     ]
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="vn.com.booking.services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\Booking_App" />
-      <recent name="D:\Project\Booking\src\main\java\vn\com\booking\data" />
-      <recent name="D:\Project\Booking\src\data" />
-      <recent name="D:\Project\Booking\src\main\java\vn\com\booking\models\Account" />
-      <recent name="D:\Project\Booking\src\main\java\vn\com\booking" />
-    </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="vn.com.booking.services" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.Booking [bootBuildImage]">
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Booking_app [bootBuildImage]">
+    <configuration name="Booking_app [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --stacktrace" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -255,372 +153,46 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Booking [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootBuildImage" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootBuildImage" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Booking [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="BookingApplicationTests.contextLoads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;vn.com.booking.BookingApplicationTests.contextLoads&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="BookingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Booking.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="vn.com.booking.BookingApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Booking.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.com.booking.BookingApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Booking.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.com.booking.BookingApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="compose.yaml.server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="server" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dokcer-compose.yml[server, postgres]: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="removeOrphansOnComposeDown" value="false" />
-          <option name="services">
-            <list>
-              <option value="server" />
-              <option value="postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="dokcer-compose.yml" />
-          <option name="upDetach" value="false" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Docker.dokcer-compose.yml[server, postgres]: Compose Deployment" />
-      <item itemvalue="Docker.compose.yaml.server: Compose Deployment" />
-      <item itemvalue="Gradle.Booking [build]" />
-      <item itemvalue="Gradle.Booking [clean]" />
-      <item itemvalue="Gradle.BookingApplicationTests.contextLoads" />
-      <item itemvalue="Gradle.Booking [bootBuildImage]" />
-      <item itemvalue="Gradle.Booking [bootJar]" />
-      <item itemvalue="Spring Boot.BookingApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Booking [bootBuildImage]" />
-        <item itemvalue="Gradle.Booking [clean]" />
-        <item itemvalue="Gradle.BookingApplicationTests.contextLoads" />
-        <item itemvalue="Docker.compose.yaml.server: Compose Deployment" />
-        <item itemvalue="Gradle.Booking [bootJar]" />
+        <item itemvalue="Gradle.Booking_app [bootBuildImage]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SQLScriptSettings">
-    <option name="matrix">
-      <map>
-        <entry key="POSTGRES.CreateComplete" value="CreateOrReplace=1, CreateIfNotExists=1, ConstraintContext=CONSTRAINT_IN_TABLE, Reformat=0" />
-      </map>
-    </option>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.8-graalvm-ce-17-4caba194b151-99f531e2" />
-        <option value="jdk-17.0.9-jbr-17.0.9-4caba194b151-51f1b679" />
-        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="26a5b21a-4e2f-4020-8a39-82df53e72743" name="Changes" comment="" />
-      <created>1711858174631</created>
+      <changelist id="f02c5c44-f604-42e7-843d-17dec204ae32" name="Changes" comment="" />
+      <created>1713266131958</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711858174631</updated>
-      <workItem from="1711858174750" duration="4453000" />
-      <workItem from="1711882777005" duration="6128000" />
-      <workItem from="1711900334613" duration="8436000" />
-      <workItem from="1711911475265" duration="4099000" />
-      <workItem from="1711945478690" duration="1625000" />
-      <workItem from="1711950293324" duration="2860000" />
-      <workItem from="1711954582261" duration="1008000" />
-      <workItem from="1711980815848" duration="21970000" />
-      <workItem from="1712030099619" duration="10851000" />
-      <workItem from="1712043777905" duration="33084000" />
-      <workItem from="1712083230230" duration="2540000" />
-      <workItem from="1712085849255" duration="133000" />
-      <workItem from="1712121000701" duration="4953000" />
-      <workItem from="1712128356507" duration="513000" />
-      <workItem from="1712129737285" duration="25000" />
-      <workItem from="1712130485877" duration="18094000" />
-      <workItem from="1712156346858" duration="977000" />
-      <workItem from="1712166774317" duration="1859000" />
-      <workItem from="1712296288824" duration="4174000" />
-      <workItem from="1712308035123" duration="3354000" />
-      <workItem from="1712311761563" duration="999000" />
-      <workItem from="1712469201593" duration="4699000" />
-      <workItem from="1712499890733" duration="1763000" />
-      <workItem from="1712555852269" duration="7686000" />
-      <workItem from="1712566224888" duration="11774000" />
-      <workItem from="1712634543080" duration="15317000" />
-      <workItem from="1712661783602" duration="4619000" />
-      <workItem from="1712729530939" duration="4703000" />
-      <workItem from="1712815415994" duration="15849000" />
-      <workItem from="1712850296528" duration="12652000" />
-      <workItem from="1712897398126" duration="9131000" />
-      <workItem from="1712925404772" duration="1192000" />
-      <workItem from="1713028843761" duration="11081000" />
-      <workItem from="1713074626403" duration="276000" />
+      <updated>1713266131958</updated>
+      <workItem from="1713266133186" duration="1116000" />
+      <workItem from="1713267747190" duration="405000" />
+      <workItem from="1713268255082" duration="1406000" />
+      <workItem from="1713270083449" duration="1565000" />
+      <workItem from="1713272785683" duration="311000" />
+      <workItem from="1713278147382" duration="359000" />
+      <workItem from="1713279047861" duration="1087000" />
+      <workItem from="1713323598958" duration="989000" />
+      <workItem from="1713325438099" duration="6436000" />
+      <workItem from="1713429323495" duration="371000" />
     </task>
-    <task id="LOCAL-00001" summary="init project">
-      <option name="closed" value="true" />
-      <created>1711912024562</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1711912024562</updated>
-    </task>
-    <task id="LOCAL-00002" summary="init project">
-      <option name="closed" value="true" />
-      <created>1711912582199</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1711912582199</updated>
-    </task>
-    <task id="LOCAL-00003" summary="init project">
-      <option name="closed" value="true" />
-      <created>1711912912486</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1711912912486</updated>
-    </task>
-    <task id="LOCAL-00004" summary="change: sign-up, response">
-      <option name="closed" value="true" />
-      <created>1712289374843</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712289374843</updated>
-    </task>
-    <task id="LOCAL-00005" summary="change: sign-up, response">
-      <option name="closed" value="true" />
-      <created>1712487057154</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712487057155</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add: change-profile">
-      <option name="closed" value="true" />
-      <created>1712925497729</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712925497730</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,114 +202,15 @@
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="executable:kubectl" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
     <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="b20c8c5b-cdb3-432d-87f1-596e6a73c0f9" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="*" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$/Bocking" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="TEXT_FILTER_SETTINGS">
-                <TextFilterSettings>
-                  <option name="REGEX" value="true" />
-                </TextFilterSettings>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="b20c8c5b-cdb3-432d-87f1-596e6a73c0f9">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init project" />
-    <MESSAGE value="init project 2" />
-    <MESSAGE value="change: sign-up, response" />
-    <MESSAGE value="add: change-profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: change-profile" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="javax.management.InstanceNotFoundException" package="javax.management" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="change: get-users" />
+    <MESSAGE value="change: fix change-profile, update path change-password" />
+    <option name="LAST_COMMIT_MESSAGE" value="change: fix change-profile, update path change-password" />
   </component>
 </project>
